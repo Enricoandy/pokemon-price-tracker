@@ -46,10 +46,9 @@ def get_price(shop, url):
         response = requests.get(url, headers=HEADERS, timeout=20)
         soup = BeautifulSoup(response.text, "html.parser")
 
-if shop == "tcgcompany":
-    price = soup.select_one(".woocommerce-Price-amount")
-    return price.text.strip() if price else "Niet gevonden"
-
+        if shop == "tcgcompany":
+            price = soup.select_one(".woocommerce-Price-amount")
+            return price.text.strip() if price else "Niet gevonden"
 
         if shop == "pokeplaza":
             price = soup.select_one("span.money")
