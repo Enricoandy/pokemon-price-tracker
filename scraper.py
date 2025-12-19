@@ -124,11 +124,16 @@ PRODUCTS = {
         "tcgreus": "URL_TCGREUS_SEB"
     },
     "terastal festival sv8a": {
-        "tcgcompany": "URL_TCGCOMPANY_TF",
-        "pokeplaza": "URL_POKEPLAZA_TF",
-        "pokejapan": "URL_POKEJAPAN_TF",
-        "cardgamelife": "URL_CARDGAMELIFE_TF",
-        "tcgreus": "URL_TCGREUS_TF"
+PRODUCTS = {
+    "Terastal Festival EX SV8a": {
+        "tcgcompany": "https://tcgcompany.nl/terastal-festival-ex-booster-box/",
+        "pokeplaza": "https://www.pokeplaza.nl/products/pokemon-sv8a-terastal-festival-ex-japanse-booster-box",
+        "pokejapan": "https://tcgjapan.nl/booster-boxen/589-terastal-festival-booster-box.html",
+        "cardgamelife": "",
+        "tcgreus": ""
+    }
+}
+
     },
     "vstar universe 12a": {
         "tcgcompany": "URL_TCGCOMPANY_VU",
