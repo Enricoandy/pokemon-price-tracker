@@ -2,20 +2,32 @@ name: Weekly Pokémon Price Check
 
 on:
   schedule:
-    - cron: '0 8 * * 1'  # Elke maandag 08:00
+    - cron: '0 6 * * 1' # elke maandag 06:00
   workflow_dispatch:
 
 jobs:
-  run-scraper:
+  scrape:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install -r requirements.txt
-      - run: python scraper.py
-      - uses: actions/upload-artifact@v4
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install chromium
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Upload CSV
+        uses: actions/upload-artifact@v4
         with:
           name: prijzen
           path: prijzen.csv
