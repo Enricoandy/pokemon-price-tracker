@@ -123,8 +123,7 @@ PRODUCTS = {
         "cardgamelife": "URL_CARDGAMELIFE_SEB",
         "tcgreus": "URL_TCGREUS_SEB"
     },
-    "terastal festival sv8a": {
-PRODUCTS = {
+  
     "Terastal Festival EX SV8a": {
         "tcgcompany": "https://tcgcompany.nl/terastal-festival-ex-booster-box/",
         "pokeplaza": "https://www.pokeplaza.nl/products/pokemon-sv8a-terastal-festival-ex-japanse-booster-box",
