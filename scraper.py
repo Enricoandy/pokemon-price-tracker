@@ -6,7 +6,7 @@ import csv
 PRODUCTS = {
     "pokemon 151 SV2A": {
         "tcgcompany": "https://tcgcompany.nl/151-booster-box-geen-seal-no-shrink/",
-        "pokeplaza": "URL_POKEPLAZA_151",
+        "pokeplaza": "https://pokeplaza.com/en/products/pokemon-sv2a-151-japanse-booster-box?_pos=8&_sid=86000c676&_ss=r",
         "pokejapan": "URL_POKEJAPAN_151",
         "cardgamelife": "URL_CARDGAMELIFE_151",
         "tcgreus": "URL_TCGREUS_151"
