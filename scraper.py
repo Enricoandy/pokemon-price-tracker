@@ -22,28 +22,39 @@ PRODUCTS = {
 
 def get_price_tcgcompany(url):
     soup = fetch_soup(url)
+    if not soup:
+        return "Niet gevonden"
     price = soup.select_one(".price")
     return clean_price(price)
 
 def get_price_pokeplaza(url):
     soup = fetch_soup(url)
+    if not soup:
+        return "Niet gevonden"
     price = soup.select_one(".price-item--regular")
     return clean_price(price)
 
 def get_price_tcgjapan(url):
     soup = fetch_soup(url)
+    if not soup:
+        return "Niet gevonden"
     price = soup.select_one(".our_price_display")
     return clean_price(price)
 
 def get_price_cardgamelife(url):
     soup = fetch_soup(url)
+    if not soup:
+        return "Niet gevonden"
     price = soup.select_one(".price-item--regular")
     return clean_price(price)
 
 def get_price_tcgreus(url):
     soup = fetch_soup(url)
+    if not soup:
+        return "Niet gevonden"
     price = soup.select_one(".price-item--regular")
     return clean_price(price)
+
 
 # -------------------- HULPFUNCTIES --------------------
 
